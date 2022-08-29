@@ -12,26 +12,40 @@
       Thank you for taking the time to help us improve the platform
     </p>
     <form id="survey-form">
-      <fieldset>
+      <fieldset class="fieldset">
         <legend>Name</legend>
-        <input id="name" type="text" placeholder="Enter your name" required />
+        <input
+          class="name-like-input"
+          id="name"
+          type="text"
+          placeholder="Enter your name"
+          required
+        />
       </fieldset>
-      <fieldset>
+      <fieldset class="fieldset">
         <legend>Email</legend>
         <input
+          class="name-like-input"
           id="email"
           type="email"
           placeholder="Enter your email"
           required
         />
       </fieldset>
-      <fieldset>
+      <fieldset class="fieldset">
         <legend>Age</legend>
-        <input id="number" type="number" min="10" max="99" placeholder="Age" />
+        <input
+          class="name-like-input"
+          id="number"
+          type="number"
+          min="10"
+          max="99"
+          placeholder="Age"
+        />
       </fieldset>
-      <fieldset>
+      <fieldset class="fieldset">
         <legend>Which option best describes your current role?</legend>
-        <select>
+        <select class="name-like-input">
           <option value="Student">Student</option>
           <option value="Full time job">Full time job</option>
           <option value="Full time learner">Full time learner</option>
@@ -39,45 +53,68 @@
           <option value="Other">Other</option>
         </select>
       </fieldset>
-      <fieldset>
+      <fieldset class="fieldset">
         <legend>Would you recommend freeCodeCamp to a friend?</legend>
-        <label class="new-line">
-          <input type="radio" name="recommend" value="definitely" />Definitely
-        </label>
-        <label class="new-line">
-          <input type="radio" name="recommend" value="maybe" />Maybe
-        </label>
-        <label class="new-line">
-          <input type="radio" name="recommend" value="not-sure" />Not sure
-        </label>
+        <div class="name-like-input radio">
+          <label>
+            <input type="radio" name="recommend" value="definitely" />Definitely
+          </label>
+          <label>
+            <input type="radio" name="recommend" value="maybe" />Maybe
+          </label>
+          <label>
+            <input type="radio" name="recommend" value="not-sure" />Not sure
+          </label>
+        </div>
       </fieldset>
-      <fieldset>
+      <fieldset class="fieldset">
         <legend>
           What would you like to see improved? (Check all that apply)
         </legend>
-        <label class="new-line">
-          <input type="checkbox" name="recommend" value="definitely" />Front-end
-          Projects
-        </label>
-        <label class="new-line">
-          <input type="checkbox" name="recommend" value="maybe" />Back-end
-          Projects
-        </label>
-        <label class="new-line">
-          <input type="checkbox" name="recommend" value="not-sure" />Data
-          Visualization
-        </label>
+        <div class="name-like-input checkbox">
+          <label>
+            <input
+              type="checkbox"
+              name="recommend"
+              value="definitely"
+            />Front-end Projects
+          </label>
+          <label>
+            <input type="checkbox" name="recommend" value="maybe" />Back-end
+            Projects
+          </label>
+          <label>
+            <input type="checkbox" name="recommend" value="not-sure" />Data
+            Visualization
+          </label>
+          <label>
+            <input type="checkbox" name="recommend" value="not-sure" />Data
+            Visualization
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="recommend"
+              value="not-sure"
+            />Challenges
+          </label>
+          <label>
+            <input type="checkbox" name="recommend" value="not-sure" />Videos
+          </label>
+          <label>
+            <input type="checkbox" name="recommend" value="not-sure" />Wiki
+          </label>
+        </div>
       </fieldset>
-      <fieldset>
-        <legend>Any comments or suggestions?</legend>
-        <textarea
-          id="comment"
-          cols="30"
-          rows="10"
-          placeholder="Enter your comment here..."
-        ></textarea>
-      </fieldset>
+      <legend class="comment-legend">Any comments or suggestions?</legend>
+      <textarea
+        id="comment"
+        cols="50"
+        rows="10"
+        placeholder="Enter your comment here..."
+      ></textarea>
       <input type="submit" value="submit" id="submit" />
+      <div id="empty-div"></div>
     </form>
   </body>
 </html>

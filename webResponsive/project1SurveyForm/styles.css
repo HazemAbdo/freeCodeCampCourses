@@ -1,3 +1,75 @@
-.new-line {
+:root {
+  --color-one: #e8b4b8;
+  --color-two: #eed6d3;
+  --color-three: #a49393;
+  --color-four: #67595e;
+}
+body {
+  background-color: var(--color-one);
+  margin: 0;
+  box-sizing: border-box;
+}
+#title {
+  margin: 20px auto auto 10px;
+  text-align: center;
+}
+
+#description {
+  text-align: center;
+  font-size: 20px;
+}
+
+#survey-form {
+  width: 60%;
+  margin: 3% auto;
+  background-color: var(--color-three);
+  border-radius: 7px;
+  padding: 1% 0;
+}
+.fieldset {
+  border: none;
+}
+legend {
+  margin-left: 9%;
+}
+.name-like-input {
+  height: 30px;
   display: block;
+  margin: 0 auto;
+  width: 80%;
+  background-color: var(--color-two);
+  border-radius: 7px;
+}
+#submit {
+  display: block;
+  width: 80%;
+  height: 40px;
+  margin: 30px auto 10px auto;
+  background-color: var(--color-four);
+  border-radius: 7px;
+}
+#empty-div {
+  height: 10px;
+}
+#comment {
+  height: 100%;
+  resize: vertical;
+  overflow: auto;
+  margin: 1% 0 0 11%;
+  background-color: var(--color-two);
+  min-height: 80px;
+  border-radius: 7px;
+  width: 50%;
+}
+.radio {
+  min-height: 60px;
+}
+.checkbox {
+  min-height: 150px;
+}
+label {
+  display: block;
+}
+.comment-legend {
+  margin-left: 11%;
 }
