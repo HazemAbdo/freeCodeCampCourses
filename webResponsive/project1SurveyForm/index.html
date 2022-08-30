@@ -3,7 +3,7 @@
   <head>
     <title>Survey Form</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -13,7 +13,7 @@
     </p>
     <form id="survey-form">
       <fieldset class="fieldset">
-        <legend>Name</legend>
+        <label for="name" id="name-label" class="label">Name</label>
         <input
           class="name-like-input"
           id="name"
@@ -23,7 +23,7 @@
         />
       </fieldset>
       <fieldset class="fieldset">
-        <legend>Email</legend>
+        <label for="email" id="email-label" class="label">Email</label>
         <input
           class="name-like-input"
           id="email"
@@ -33,7 +33,7 @@
         />
       </fieldset>
       <fieldset class="fieldset">
-        <legend>Age</legend>
+        <label for="number" id="number-label" class="label">Age</label>
         <input
           class="name-like-input"
           id="number"
@@ -44,8 +44,10 @@
         />
       </fieldset>
       <fieldset class="fieldset">
-        <legend>Which option best describes your current role?</legend>
-        <select class="name-like-input">
+        <label for="dropdown" class="label"
+          >Which option best describes your current role?</label
+        >
+        <select class="name-like-input" id="dropdown">
           <option value="Student">Student</option>
           <option value="Full time job">Full time job</option>
           <option value="Full time learner">Full time learner</option>
@@ -54,8 +56,10 @@
         </select>
       </fieldset>
       <fieldset class="fieldset">
-        <legend>Would you recommend freeCodeCamp to a friend?</legend>
-        <div class="name-like-input radio">
+        <label for="radio-elements" class="label"
+          >Would you recommend freeCodeCamp to a friend?</label
+        >
+        <div class="name-like-input radio-elements" id="radio">
           <label>
             <input type="radio" name="recommend" value="definitely" />Definitely
           </label>
@@ -68,10 +72,10 @@
         </div>
       </fieldset>
       <fieldset class="fieldset">
-        <legend>
-          What would you like to see improved? (Check all that apply)
-        </legend>
-        <div class="name-like-input checkbox">
+        <label for="checkbox-elements" class="label">
+          What would you like to see improved? (Check all that apply)</label
+        >
+        <div class="name-like-input checkbox-elements">
           <label>
             <input
               type="checkbox"
@@ -106,13 +110,17 @@
           </label>
         </div>
       </fieldset>
-      <legend class="comment-legend">Any comments or suggestions?</legend>
-      <textarea
-        id="comment"
-        cols="50"
-        rows="10"
-        placeholder="Enter your comment here..."
-      ></textarea>
+      <fieldset class="fieldset">
+        <label for="comment" class="label">Any comments or suggestions?</label>
+
+        <textarea
+          id="comment"
+          class="name-like-input"
+          cols="300"
+          rows="10"
+          placeholder="Enter your comment here..."
+        ></textarea>
+      </fieldset>
       <input type="submit" value="submit" id="submit" />
       <div id="empty-div"></div>
     </form>

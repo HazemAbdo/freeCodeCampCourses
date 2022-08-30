@@ -8,9 +8,10 @@ body {
   background-color: var(--color-one);
   margin: 0;
   box-sizing: border-box;
+  font-size: 20px;
 }
 #title {
-  margin: 20px auto auto 10px;
+  margin: 2% auto auto 1%;
   text-align: center;
 }
 
@@ -29,8 +30,9 @@ body {
 .fieldset {
   border: none;
 }
-legend {
+.label {
   margin-left: 9%;
+  margin-bottom: 1%;
 }
 .name-like-input {
   height: 30px;
@@ -52,24 +54,14 @@ legend {
   height: 10px;
 }
 #comment {
-  height: 100%;
   resize: vertical;
-  overflow: auto;
-  margin: 1% 0 0 11%;
   background-color: var(--color-two);
-  min-height: 80px;
   border-radius: 7px;
-  width: 50%;
 }
-.radio {
-  min-height: 60px;
-}
-.checkbox {
-  min-height: 150px;
+.checkbox-elements,
+.radio-elements {
+  height: auto;
 }
 label {
   display: block;
-}
-.comment-legend {
-  margin-left: 11%;
 }

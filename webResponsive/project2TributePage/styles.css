@@ -1,0 +1,31 @@
+body {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+}
+#title {
+  margin: 0 auto;
+  text-align: center;
+}
+#sub-title {
+  margin: 0 auto;
+  text-align: center;
+}
+#img-div {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 5% 0;
+  height: 30%;
+}
+#image {
+  width: 80%;
+  height: 90%;
+  object-fit: contain;
+  margin-bottom: 1%;
+}
+#tribute-info {
+  /* background-color: antiquewhite; */
+}
