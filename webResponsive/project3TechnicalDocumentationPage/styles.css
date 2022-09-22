@@ -12,42 +12,6 @@ body {
   height: 100%;
   padding: 2%;
 }
-#navbar {
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  width: 27%;
-  height: 100%;
-  border-right: solid;
-  border-color: rgba(0, 22, 22, 0.4);
-  overflow-y: scroll;
-  overflow-x: hidden;
-}
-#navbar header {
-  display: block;
-  color: black;
-  margin: 10px;
-  text-align: center;
-  font-size: 1.5rem;
-}
-#navbar ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-#navbar li {
-  list-style-type: none;
-  border-bottom: 1px solid black;
-  padding-left: 3%;
-}
-#navbar .nav-link {
-  text-decoration: none;
-  color: black;
-}
-
 code {
   display: block;
   text-align: left;
@@ -57,9 +21,55 @@ code {
   word-wrap: normal;
   line-height: 2;
   background-color: #f7f7f7;
-  padding: 15px;
+  padding: 20px;
   margin: 10px;
   border-radius: 5px;
+}
+#navbar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 25%;
+  height: 100%;
+  border-right: solid;
+  border-color: rgba(0, 22, 22, 0.4);
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+#navbar header {
+  width: 100%;
+  background-color: white;
+  position: sticky;
+  top: 0px;
+  color: black;
+  text-align: center;
+  font-size: 1.3rem;
+}
+#navbar ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 5%;
+}
+#navbar li {
+  height: 100%;
+  list-style-type: none;
+  border-bottom: 1px solid black;
+  padding-left: 3%;
+  display: flex;
+  align-items: center;
+}
+#navbar ul :last-child {
+  border-bottom: none;
+}
+#navbar .nav-link {
+  text-decoration: none;
+  color: black;
 }
 
 /*add media query if width less than 820px */
@@ -68,18 +78,23 @@ code {
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-between;
-    align-items: stretch;
   }
   #main-doc {
     width: 100%;
-    height: 70%;
   }
   #navbar {
-    height: 30%;
     width: 100%;
     position: relative;
-    border-right: solid;
-    border-color: rgba(0, 22, 22, 0.4);
-    overflow-y: auto;
+    overflow: hidden;
+    border-right: none;
+  }
+  #navbar ul {
+    margin-bottom: 0;
+  }
+  #navbar li {
+    margin-bottom: 10px;
+  }
+  #navbar li:last-child {
+    margin-bottom: 0;
   }
 }
