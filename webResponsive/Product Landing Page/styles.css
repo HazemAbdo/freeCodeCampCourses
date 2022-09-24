@@ -1,8 +1,10 @@
 /* The navbar should always be at the top of the viewport */
 /* Your product landing page should have at least one media query */
 /* Your product landing page should utilize CSS flexbox at least once */
-body {
+* {
   box-sizing: border-box;
+}
+body {
   margin: 0;
   background-color: white;
   font-size: 20px;
@@ -11,56 +13,59 @@ body {
   padding: 0 10%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: white;
 }
 #header-img {
   width: 30%;
-  /* background-color: antiquewhite; */
+  min-width: 300px;
+  min-height: 47px;
 }
 #nav-bar {
   width: 35%;
 }
-ul {
-  display: flex;
-  justify-content: space-between;
+#nav-bar ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
 }
-.nav-link {
+li {
   list-style: none;
   text-decoration: none;
 }
-a {
+.nav-link {
   color: black;
   text-decoration: none;
 }
 .form {
-  /* background-color: aqua; */
+  margin-top: 6%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  /* padding: 0 !important; */
   height: 200px;
 }
-h2 {
-  /* background-color: yellow; */
-}
+
 #form {
   width: 100%;
   height: 80%;
-  /* background-color: brown; */
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
 }
 #email {
   width: 25%;
   height: 20%;
-  margin-bottom: 1%;
+  min-width: 215px;
+  min-height: 30px;
 }
 #submit {
   width: 10%;
-  height: 25%;
-  margin-bottom: 1%;
+  height: 35%;
+  min-width: 110px;
+  min-height: 30px;
 }
 img {
   width: 47px;
@@ -73,12 +78,10 @@ img {
     "one one two two two two two"
     "three three four four four four four"
     "five  five six six six six six";
-  /* background-color: aqua; */
   padding-left: 5%;
 }
 .one {
   grid-area: one;
-  /* background-color: violet; */
 }
 .two {
   grid-area: two;
@@ -96,11 +99,9 @@ img {
   grid-area: six;
 }
 .description {
-  /* background-color: violet; */
   margin-bottom: 1%;
 }
 .icon {
-  /* background-color: yellow; */
   margin-top: 25%;
 }
 .video {
@@ -113,4 +114,72 @@ img {
 #video {
   width: 40%;
   height: 100%;
+  min-width: 250px;
+  min-height: 150px;
+}
+.cards {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 5%;
+}
+.card {
+  border: 1px solid black;
+  text-align: center;
+}
+.card .card-title {
+  background-color: #ddd;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card button {
+  height: 10%;
+  width: 40%;
+  border-radius: 15px;
+}
+
+.footer {
+  width: 90%;
+  margin: 0 auto;
+  background-color: #ddd;
+  padding: 2px 10px 2px 2px;
+}
+.footer ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.footer li {
+  list-style: none;
+  margin: 0 1%;
+}
+.footer a {
+  text-decoration: none;
+  color: black;
+}
+.footer p {
+  text-align: right;
+  margin: 0;
+}
+@media (max-width: 600px) {
+  #header {
+    flex-direction: column;
+    align-items: center;
+  }
+  #nav-bar ul {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 800px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+  .card {
+    min-width: 300px;
+  }
 }

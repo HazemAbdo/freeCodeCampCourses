@@ -16,13 +16,13 @@
       />
       <nav id="nav-bar">
         <ul>
-          <li class="nav-link">
-            <a href=""> Features</a>
+          <li>
+            <a class="nav-link" href="#features"> Features</a>
           </li>
-          <li class="nav-link">
-            <a href="">How It Works</a>
+          <li>
+            <a class="nav-link" href="#video">Works</a>
           </li>
-          <li class="nav-link"><a href="">Pricing</a></li>
+          <li><a class="nav-link" href="#cards">Pricing</a></li>
         </ul>
       </nav>
     </header>
@@ -33,11 +33,17 @@
         method="post"
         id="form"
       >
-        <input type="email" name="" id="email" placeholder="" pattern="" />
-        <input type="submit" id="submit" />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter your email address"
+          pattern="/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g"
+        />
+        <input type="submit" id="submit" value="GET STARTED" />
       </form>
     </section>
-    <section class="features">
+    <section class="features" id="features">
       <img src="./assets/flame.png" alt="flame image" class="one icon" />
       <div class="description two">
         <h3>Premium Materials</h3>
@@ -76,10 +82,65 @@
       >
       </iframe>
     </section>
-    <section class="cards">
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
+    <section class="cards" id="cards">
+      <div class="card">
+        <div class="card-title">
+          <h3>TENOR TROMBONE</h3>
+        </div>
+        <h3>$600</h3>
+        <p>lorem ipsum</p>
+        <p>lorem ipsum</p>
+        <p>lorem ipsum dolor.</p>
+        <p>lorem ipsum</p>
+        <button>SELECT</button>
+      </div>
+      <div class="card">
+        <div class="card-title">
+          <h3>TENOR TROMBONE</h3>
+        </div>
+        <h3>$600</h3>
+        <p>lorem ipsum</p>
+        <p>lorem ipsum</p>
+        <p>lorem ipsum dolor.</p>
+        <p>lorem ipsum</p>
+        <button>SELECT</button>
+      </div>
+      <div class="card">
+        <div class="card-title">
+          <h3>TENOR TROMBONE</h3>
+        </div>
+        <h3>$600</h3>
+        <p>lorem ipsum</p>
+        <p>lorem ipsum</p>
+        <p>lorem ipsum dolor.</p>
+        <p>lorem ipsum</p>
+        <button>SELECT</button>
+      </div>
     </section>
   </body>
+  <footer id="footer">
+    <div class="footer">
+      <ul>
+        <li>
+          <a
+            href="http://127.0.0.1:5500/webResponsive/Product%20Landing%20Page/index.html"
+            >Privacy</a
+          >
+        </li>
+        <li>
+          <a
+            href="http://127.0.0.1:5500/webResponsive/Product%20Landing%20Page/index.html"
+            >Terms</a
+          >
+        </li>
+        <li>
+          <a
+            href="http://127.0.0.1:5500/webResponsive/Product%20Landing%20Page/index.html"
+            >Contact</a
+          >
+        </li>
+      </ul>
+      <p>Copyright 2016, Original Trombones</p>
+    </div>
+  </footer>
 </html>
